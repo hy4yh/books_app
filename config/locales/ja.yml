@@ -26,3 +26,10 @@ ja:
       success: 本を削除しました。
     index:
       newbook: 新規作成
+  errors:
+    messages:
+      blank: を入力してください。
+    template:
+      header:
+        one:   "%{model}にエラーが発生しました。"
+        other: "%{model}に%{count}個のエラーが発生しました。"
