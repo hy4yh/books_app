@@ -400,6 +400,7 @@ module ActiveModel
     # * <tt>errors.messages.blank</tt>
     def generate_message(attribute, type = :invalid, options = {})
       type = options.delete(:message) if options[:message].is_a?(Symbol)
+
       if @base.class.respond_to?(:i18n_scope)
         i18n_scope = @base.class.i18n_scope.to_s
         defaults = @base.class.lookup_ancestors.flat_map do |klass|
@@ -425,6 +426,7 @@ module ActiveModel
         value: value,
         object: @base
       }.merge!(options)
+
       I18n.translate(key, options)
     end
 
