@@ -1,4 +1,9 @@
 ja:
+  show: 詳細
+  edit: 編集
+  destroy: 削除
+  back: 戻る
+  confirm: 本当に削除しますか？
   activerecord:
     models:
       book: 本
@@ -19,3 +24,5 @@ ja:
       success: 本を更新しました。
     destroy:
       success: 本を削除しました。
+    index:
+      newbook: 新規作成

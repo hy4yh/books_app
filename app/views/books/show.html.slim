@@ -13,6 +13,6 @@ p
   strong Picture:
   = image_tag(@book.picture_url) if @book.picture.present?
 
-=> link_to 'Edit', edit_book_path(@book)
+=> link_to t('edit'), edit_book_path(@book)
 '|
-=< link_to 'Back', books_path
+=< link_to t('back'), books_path
