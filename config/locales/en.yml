@@ -36,6 +36,10 @@ en:
   destroy: Destroy
   back: Back
   confirm: Are you sure?
+  title: Title
+  memo: Memo
+  author: Author
+  picture: Picture
   books:
     create:
       success: Book was successfully created.
@@ -45,8 +49,8 @@ en:
       success: Book was successfully destroyed.
     index:
       newbook: New Book
-  errors:
-    template:
-      header:
-        one:   "%{count} error prohibited this %{model} from being saved:"
-        other: "%{count} error prohibited this %{model} from being saved:"
+      listing_books: Listing Books
+    new:
+      newbook: New Book
+    edit:
+      editing_book: Editing Books

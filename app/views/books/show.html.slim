@@ -1,16 +1,16 @@
 p#notice = notice
 
 p
-  strong Title:
+  strong = "#{t("title")}:"
   = @book.title
 p
-  strong Memo:
+  strong = "#{t("memo")}:"
   = @book.memo
 p
-  strong Author:
+  strong = "#{t("author")}:"
   = @book.author
 p
-  strong Picture:
+  strong = "#{t("picture")}:"
   = image_tag(@book.picture_url) if @book.picture.present?
 
 => link_to t('edit'), edit_book_path(@book)

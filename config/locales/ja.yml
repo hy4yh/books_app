@@ -4,6 +4,10 @@ ja:
   destroy: 削除
   back: 戻る
   confirm: 本当に削除しますか？
+  title: タイトル
+  memo: メモ
+  author: 著者
+  picture: 写真
   activerecord:
     models:
       book: 本
@@ -26,10 +30,8 @@ ja:
       success: 本を削除しました。
     index:
       newbook: 新規作成
-  errors:
-    messages:
-      blank: を入力してください。
-    template:
-      header:
-        one:   "%{model}にエラーが発生しました。"
-        other: "%{model}に%{count}個のエラーが発生しました。"
+      listing_books: 一覧
+    new:
+      newbook: 新規作成
+    edit:
+      editing_book: 編集
