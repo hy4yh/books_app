@@ -23,5 +23,5 @@ table
         td = link_to t('destroy'), book, data: { confirm: t('confirm') }, method: :delete
 
 br
-
+= paginate @books
 = link_to t('.newbook'), new_book_path
