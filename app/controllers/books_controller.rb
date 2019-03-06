@@ -9,7 +9,6 @@ class BooksController < ApplicationController
   # GET /books.json
   def index
     @books = current_user.books.page(params[:page]).per(5)
->>>>>>> userとbookのアソシエーション設定
   end
 
   # GET /books/1
