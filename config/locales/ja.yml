@@ -24,6 +24,8 @@ ja:
         memo: メモ
         author: 著者
         picture: 画像
+      user:
+        name: 名前
   helpers:
     submit:
       create: 登録
