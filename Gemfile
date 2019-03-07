@@ -21,7 +21,8 @@ gem "uglifier", ">= 1.3.0"
 gem "rubocop", require: false
 gem "rails-i18n", "~> 5.1"
 gem "kaminari"
-
+gem "devise"
+gem "devise-i18n"
 # slim
 gem "slim-rails"
 gem "html2slim"
