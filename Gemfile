@@ -23,6 +23,11 @@ gem "rails-i18n", "~> 5.1"
 gem "kaminari"
 gem "devise"
 gem "devise-i18n"
+
+# Oauth
+gem 'omniauth'
+gem 'omniauth-twitter'
+
 # slim
 gem "slim-rails"
 gem "html2slim"
