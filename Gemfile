@@ -25,8 +25,8 @@ gem "devise"
 gem "devise-i18n"
 
 # Oauth
-gem 'omniauth'
-gem 'omniauth-facebook'
+gem "omniauth"
+gem "omniauth-facebook"
 
 # slim
 gem "slim-rails"

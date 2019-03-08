@@ -25,7 +25,7 @@ class User < ApplicationRecord
     end
 
     def new_with_session(params, session)
-      if user_attributes = session['devise.user_attributes']
+      if user_attributes = session["devise.user_attributes"]
         new(user_attributes) { |user| user.attributes = params }
       else
         super
