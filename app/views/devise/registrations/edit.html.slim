@@ -8,6 +8,10 @@ h2
     br
     = f.text_field :name, autofocus: true, autocomplete: "name"
   .field
+    = f.label :avatar
+    br
+    = f.file_field :avatar, autofocus: true, autocomplete: "avatar"
+  .field
     = f.label :email
     br
     = f.email_field :email, autofocus: true, autocomplete: "email"

@@ -9,6 +9,7 @@ class BooksController < ApplicationController
   # GET /books.json
   def index
     @books = current_user.books.page(params[:page]).per(5)
+    @user = current_user
   end
 
   # GET /books/1

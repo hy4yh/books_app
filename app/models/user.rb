@@ -7,6 +7,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable,
          :omniauthable, omniauth_providers: [:facebook]
 
+  has_one_attached :avatar
   has_many :books, dependent: :destroy
 
   validates :name, presence: true
