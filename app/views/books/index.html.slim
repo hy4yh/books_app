@@ -4,8 +4,8 @@ h1 = t(".listing_books")
 
 ul
   li
-    p = @user.name
-    = image_tag @user.avatar.variant(resize: "200x200") if @user.avatar.attached?
+    p = current_user.name
+    = image_tag current_user.avatar.variant(resize: "200x200") if current_user.avatar.attached?
 table
   thead
     tr
