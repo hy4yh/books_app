@@ -8,6 +8,11 @@ h2
     br
     = f.text_field :name, autofocus: true, autocomplete: "name"
   .field
+    = f.label :avatar
+    = image_tag current_user.avatar.variant(resize: "200x200") if current_user.avatar.attached?
+    br
+    = f.file_field :avatar, autofocus: true
+  .field
     = f.label :email
     br
     = f.email_field :email, autofocus: true, autocomplete: "email"
