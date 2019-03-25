@@ -1,12 +1,14 @@
+# frozen_string_literal: true
+
 # This file is copied to spec/ when you run 'rails generate rspec:install'
-require 'spec_helper'
-ENV['RAILS_ENV'] ||= 'test'
-require File.expand_path('../../config/environment', __FILE__)
+require "spec_helper"
+ENV["RAILS_ENV"] ||= "test"
+require File.expand_path("../../config/environment", __FILE__)
 # Prevent database truncation if the environment is production
 abort("The Rails environment is running in production mode!") if Rails.env.production?
-require 'rspec/rails'
+require "rspec/rails"
 # Add additional requires below this line. Rails is not loaded until this point!
-require 'capybara/rspec'
+require "capybara/rspec"
 Capybara.configure do |capybara_config|
   capybara_config.default_driver = :selenium_chrome
   capybara_config.default_max_wait_time = 10 # 一つのテストに10秒以上かかったらタイムアウトするように設定しています
@@ -15,11 +17,11 @@ end
 Capybara.register_driver :selenium_chrome do |app|
   options = Selenium::WebDriver::Chrome::Options.new
   # options.add_argument('headless') # ヘッドレスモードをonにするオプション
-  options.add_argument('--disable-gpu') # 暫定的に必要なフラグとのこと
+  options.add_argument("--disable-gpu") # 暫定的に必要なフラグとのこと
   Capybara::Selenium::Driver.new(app, browser: :chrome, options: options)
 end
 Capybara.javascript_driver = :selenium_chrome
-include Warden::Test::Helpers #deviseのlogin_asメソッドを使用するため追加
+include Warden::Test::Helpers # deviseのlogin_asメソッドを使用するため追加
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
 # run as spec files by default. This means that files in spec/support that end
